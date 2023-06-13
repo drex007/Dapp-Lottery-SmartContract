@@ -22,11 +22,17 @@ module.exports = {
     },
     sepolia: {
       chainId: 11155111,
-      blockConfirmations: 6,
+      blockConfirmations: 1,
       url: SEPOLIA_RPC_URL,
       accounts: [PRIVATE_KEY]
 
     }
+  },
+  gasReporter:{
+    enabled: false,
+    currency:'USD',
+    outputFile:"gas-report.txt",
+    noColors:true,
   },
   namedAccounts: {
     deployer: {
